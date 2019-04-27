@@ -18,7 +18,7 @@ module.exports = {
     prod             : {
         env                      : require('./prod.env'),
         cssSourceMap             : true,
-        productionHtml           : false,
+        productionHtml           : true,
         // Gzip off by default as many popular static hosts such as
         // Surge or Netlify already gzip all static assets for you.
         // Before setting to `true`, make sure to:
@@ -79,7 +79,7 @@ module.exports = {
                 entries[name] = path.join(this.build.entryDirectory, entryFile);
             }
         });
-        
+
         return entries;
     },
 };

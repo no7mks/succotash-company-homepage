@@ -1,4 +1,4 @@
 import slimvue from 'slimvue';
-import App     from 'succotash-company-homepage/components/App.vue';
+import homepage     from 'succotash-company-homepage/components/Homepage';
 
-slimvue.mount(App);
+slimvue.mount(homepage);

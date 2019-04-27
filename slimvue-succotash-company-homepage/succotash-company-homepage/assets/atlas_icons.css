@@ -1,0 +1,36 @@
+.icon-image_btn_next {
+  background-image: url(atlas_icons.png);
+  background-position: 0px 0px;
+  width: 34px;
+  height: 62px;
+}
+.icon-image_btn_prev {
+  background-image: url(atlas_icons.png);
+  background-position: -34px 0px;
+  width: 34px;
+  height: 62px;
+}
+.icon-image_icon_fb {
+  background-image: url(atlas_icons.png);
+  background-position: -68px -30px;
+  width: 15px;
+  height: 16px;
+}
+.icon-image_icon_fb_hover {
+  background-image: url(atlas_icons.png);
+  background-position: -68px -46px;
+  width: 15px;
+  height: 16px;
+}
+.icon-image_icon_tw {
+  background-image: url(atlas_icons.png);
+  background-position: -68px 0px;
+  width: 18px;
+  height: 15px;
+}
+.icon-image_icon_tw_hover {
+  background-image: url(atlas_icons.png);
+  background-position: -68px -15px;
+  width: 18px;
+  height: 15px;
+}
