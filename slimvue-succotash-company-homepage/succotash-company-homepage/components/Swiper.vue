@@ -1,0 +1,67 @@
+<template>
+    <!-- Slider main container -->
+    <div class="swiper-container">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">Slide 1</div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+            ...
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+    </div>
+</template>
+
+<script>
+    import Swiper from 'swiper';
+
+    export default {
+        name: "swiper-demo",
+        components: {
+            Swiper,
+        },
+        mounted() {
+            const mySwiper = new Swiper('.swiper-container', {
+                // Optional parameters
+                direction: 'horizontal',
+                loop: true,
+
+                // If we need pagination
+                pagination: {
+                    el: '.swiper-pagination',
+                },
+
+                // Navigation arrows
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+
+                // And if we need scrollbar
+                scrollbar: {
+                    el: '.swiper-scrollbar',
+                },
+            });
+        },
+    };
+</script>
+
+<style scoped type="scss">
+
+    @import "https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css";
+
+    .swiper-container {
+        width: 600px;
+        height: 300px;
+    }
+
+</style>
