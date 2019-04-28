@@ -1,12 +1,22 @@
 <template>
     <div id="main">
-        <div id="screen1"></div>
+        <div id="screen1">
+            <div id="top-bar">
+                <img id="logo" src="~succotash-company-homepage/assets/images/logo.png"/>
+                <topMenu></topMenu>
+            </div>
+        </div>
         <div id="screen2">
             <div id="screen-shots-title" class="s2-block">
                 <span>FEATURED GAMES</span>
             </div>
             <div id="screen-shots-images">
-                <imageItem v-for="item in this.screenShotImages" :key="item"  :imgsrc="item" :classname="imageItemClass"></imageItem>
+                <img src="~succotash-company-homepage/assets/images/game_pic1.jpg" class="screen-shot-item" />
+                <img src="~succotash-company-homepage/assets/images/game_pic2.jpg" class="screen-shot-item" />
+                <img src="~succotash-company-homepage/assets/images/game_pic3.jpg" class="screen-shot-item" />
+                <img src="~succotash-company-homepage/assets/images/game_pic4.jpg" class="screen-shot-item" />
+                <img src="~succotash-company-homepage/assets/images/game_pic5.jpg" class="screen-shot-item" />
+                <img src="~succotash-company-homepage/assets/images/game_pic6.jpg" class="screen-shot-item" />
             </div>
             <div id="footers">
                 <span>@2012-2019 XXXXX LIMITED. All rights reserved</span>
@@ -17,10 +27,12 @@
 
 <script>
     import imageItem from "./sub/ImageItem.vue";
+    import topMenu from "./sub/topMenu.vue";
     export default {
         name       : 'homepage',
         components : {
-            imageItem
+            imageItem,
+            topMenu
         },
         data : function () {
             return {
@@ -56,6 +68,9 @@
         background-image: $s1-bk-img;
         background-repeat: no-repeat;
         background-position: center;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
     }
 
     #screen2 {
@@ -115,6 +130,18 @@
     .screen-shot-item:hover {
         transform: scale(1.02);
         border: solid 1px #FECC7B;
+    }
+
+    #top-bar {
+        width: 1200px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #logo{
+        width: 155px;
+        height: 71px;
+        margin-top: 20px;
     }
 
 </style>
