@@ -1,10 +1,10 @@
-.icon-image_btn_next {
+.swiper-container .icon-image_btn_next {
   background-image: url(atlas_icons.png);
   background-position: 0px 0px;
   width: 34px;
   height: 62px;
 }
-.icon-image_btn_prev {
+.swiper-container .icon-image_btn_prev {
   background-image: url(atlas_icons.png);
   background-position: -34px 0px;
   width: 34px;
