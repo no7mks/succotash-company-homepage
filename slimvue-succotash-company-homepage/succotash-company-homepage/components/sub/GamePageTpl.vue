@@ -8,8 +8,15 @@
             <ImageSwiper :slide-images="slideImages"></ImageSwiper>
         </div>
         <div id="screen2">
-            <div id="screen-shots-title" class="s2-block">
-                <span>FEATURED GAMES</span>
+            <div class="screen-shots-title">
+                <span>ABOUT</span>
+            </div>
+            <div id="game-description-block">
+                <p>{{gameDescription}}</p>
+
+            </div>
+            <div class="screen-shots-title">
+                <span>SCREENS</span>
             </div>
             <div id="screen-shots-images">
                 <img v-for="img in screenShotImages" :src="img" class="screen-shot-item" />
@@ -22,12 +29,12 @@
 </template>
 
 <script>
-    import imageItem from "./sub/ImageItem.vue";
-    import topMenu from "./sub/topMenu.vue";
-    import ImageSwiper from './sub/ImageSwiper';
+    import imageItem from "./ImageItem.vue";
+    import topMenu from "./topMenu.vue";
+    import ImageSwiper from './ImageSwiper';
 
     export default {
-        name       : 'homepage',
+        name       : 'game-page-tpl',
         components : {
             imageItem,
             topMenu,
@@ -37,17 +44,15 @@
             return {
                 imageItemClass : 'screen-shot-item',
                 screenShotImages : {
-                    img1: require("assets/images/game_pic1.jpg"),
-                    img2: require("assets/images/game_pic2.jpg"),
-                    img3: require("assets/images/game_pic3.jpg"),
-                    img4: require("assets/images/game_pic4.jpg"),
-                    img5: require("assets/images/game_pic5.jpg"),
-                    img6: require("assets/images/game_pic6.jpg"),
+                    img1: require("assets/images/hb_pic1.jpg"),
+                    img2: require("assets/images/hb_pic2.jpg"),
+                    img3: require("assets/images/hb_pic3.jpg"),
+                    img4: require("assets/images/hb_pic4.jpg"),
                 },
                 slideImages : {
-                    img1: require("assets/images/top_bg1.jpg"),
                     img2: require("assets/images/top_bg2.jpg"),
                 },
+                gameDescription: "\"Underworld life\" is a global RPG mobile game masterpiece. In the game, you will become the protagonist, lead the Capos to revenge for the father and reinvigorate the family glory. The real scene restoration of underworld includes capo, beauty, smuggling, kidnapping, casino, and firefight systems. The battle for becoming godfather has been unveiled. The godfather's legendary life awaits your participation."
             };
         }
     };
@@ -71,7 +76,7 @@
 
     #screen2 {
         width: 100%;
-        height: 960px;
+        min-height: 600px;
         background-image: $s2-bk-img;
         background-repeat: repeat;
 
@@ -81,13 +86,9 @@
         align-items: center;
     }
 
-    .s2-block{
-        border: solid 1px rebeccapurple;
-    }
-
-    #screen-shots-title {
+    .screen-shots-title {
         width: 1200px;
-        height: 90px;
+        height: 75px;
         color: #402828;
         font-size: 30px;
         font-weight: bold;
@@ -107,9 +108,21 @@
         justify-content: space-between;
     }
 
+    #game-description-block {
+        width: 1200px;
+    }
+
+    #game-description-block p {
+        margin: 0;
+        padding: 20px 15px 20px 15px;
+        color: #402828;
+        font-size: 24px;
+    }
+
     #footers {
         width: 100%;
         height: 55px;
+        margin-top: 50px;
         background-color:rgba(40,37,31,0.9);
         display: flex;
         justify-content: center;
@@ -119,8 +132,6 @@
     }
 
     .screen-shot-item {
-        width: 388px;
-        height: 289px;
         margin-top: 20px;
     }
     .screen-shot-item:hover {

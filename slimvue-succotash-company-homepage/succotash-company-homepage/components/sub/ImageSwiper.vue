@@ -26,13 +26,23 @@
         methods: {
             getAvatarStyle(img) {
                 return "background-image: url(" + img + ");";
+            },
+            isLoopEnabled() {
+                let len = Object.keys(this.slideImages).length;
+                if (len < 2) {
+                    return false;
+                }
+                else {
+                    return true;
+                }
             }
         },
         mounted() {
             const mySwiper = new Swiper('.swiper-container', {
                 // Optional parameters
                 direction: 'horizontal',
-                loop: true,
+                loop: this.isLoopEnabled(),
+                autoplay: false,
                 // Navigation arrows
                 navigation: {
                     nextEl: '.swiper-button-next',
@@ -55,6 +65,10 @@
     .swiper-container {
         width: 100%;
         height: 600px;
+    }
+
+    .swiper-button-disabled{
+        visibility: hidden;
     }
 
     .swiper-button-next, .swiper-button-prev {
