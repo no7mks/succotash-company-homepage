@@ -3,8 +3,7 @@
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
             <!-- Slides -->
-            <div class="swiper-slide top-bg-img top-bg1"></div>
-            <div class="swiper-slide top-bg-img top-bg2"></div>
+            <div v-for="img in this.slideImages" :style="getAvatarStyle(img)" class="swiper-slide top-bg-img"></div>
         </div>
 
         <!-- If we need navigation buttons -->
@@ -19,6 +18,15 @@
     export default {
         name: "image-swiper",
         props : {
+            slideImages: {
+                type     : Object,
+                required : true,
+            },
+        },
+        methods: {
+            getAvatarStyle(img) {
+                return "background-image: url(" + img + ");";
+            }
         },
         mounted() {
             const mySwiper = new Swiper('.swiper-container', {

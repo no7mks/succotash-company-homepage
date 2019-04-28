@@ -45,7 +45,7 @@ Object.keys(config.getEntries()).forEach((entry) => {
     let file = path.basename(entry);
     let subPath = path.dirname(entry);
     // console.log(`Adding html plugin for ${entry}, file = ${file}, subPath= ${subPath}`);
-    
+
     // // noinspection JSUnresolvedVariable
     // plugins.push(new HtmlWebpackPlugin({
     //     chunksSortMode : 'manual',
@@ -69,7 +69,7 @@ Object.keys(config.getEntries()).forEach((entry) => {
             inject         : "body",
             chunks         : ['manifest', 'vendor', 'commons', entry],
             template       : path.join(config.build.packingTemplatesPath, 'debug.html'),
-            filename       : path.join(config.build.buildOutputRoot, `htmls/${entry}.html`),
+            filename       : path.join(config.build.buildOutputRoot, `/${entry}.html`),
         }));
     }
 });

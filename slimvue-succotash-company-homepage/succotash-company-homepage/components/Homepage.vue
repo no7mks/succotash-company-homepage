@@ -5,19 +5,14 @@
                 <img id="logo" src="~succotash-company-homepage/assets/images/logo.png"/>
                 <topMenu></topMenu>
             </div>
-            <ImageSwiper></ImageSwiper>
+            <ImageSwiper :slide-images="slideImages"></ImageSwiper>
         </div>
         <div id="screen2">
             <div id="screen-shots-title" class="s2-block">
                 <span>FEATURED GAMES</span>
             </div>
             <div id="screen-shots-images">
-                <img src="~succotash-company-homepage/assets/images/game_pic1.jpg" class="screen-shot-item" />
-                <img src="~succotash-company-homepage/assets/images/game_pic2.jpg" class="screen-shot-item" />
-                <img src="~succotash-company-homepage/assets/images/game_pic3.jpg" class="screen-shot-item" />
-                <img src="~succotash-company-homepage/assets/images/game_pic4.jpg" class="screen-shot-item" />
-                <img src="~succotash-company-homepage/assets/images/game_pic5.jpg" class="screen-shot-item" />
-                <img src="~succotash-company-homepage/assets/images/game_pic6.jpg" class="screen-shot-item" />
+                <img v-for="img in screenShotImages" :src="img" class="screen-shot-item" />
             </div>
             <div id="footers">
                 <span>@2012-2019 XXXXX LIMITED. All rights reserved</span>
@@ -41,14 +36,18 @@
         data : function () {
             return {
                 imageItemClass : 'screen-shot-item',
-                screenShotImages : [
-                    "~succotash-company-homepage/assets/images/game_pic1.jpg",
-                    "~succotash-company-homepage/assets/images/game_pic2.jpg",
-                    "~succotash-company-homepage/assets/images/game_pic3.jpg",
-                    "~succotash-company-homepage/assets/images/game_pic4.jpg",
-                    "~succotash-company-homepage/assets/images/game_pic5.jpg",
-                    "~succotash-company-homepage/assets/images/game_pic6.jpg",
-                ],
+                screenShotImages : {
+                    img1: require("assets/images/game_pic1.jpg"),
+                    img2: require("assets/images/game_pic2.jpg"),
+                    img3: require("assets/images/game_pic3.jpg"),
+                    img4: require("assets/images/game_pic4.jpg"),
+                    img5: require("assets/images/game_pic5.jpg"),
+                    img6: require("assets/images/game_pic6.jpg"),
+                },
+                slideImages : {
+                    img1: require("assets/images/top_bg1.jpg"),
+                    img2: require("assets/images/top_bg2.jpg"),
+                },
             };
         }
     };
