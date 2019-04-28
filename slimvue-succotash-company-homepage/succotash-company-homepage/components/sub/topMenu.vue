@@ -1,14 +1,14 @@
 <template>
     <ul class="top_menu_bar">
         <li>
-            <a href="javascript:void(0);">ABOUT</a>
+            <a href="/">ABOUT</a>
         </li>
         <li class="li-submenuItem">
             <a class="submenuItem" href="javascript:void(0);">FEATURED GAMES</a>
             <div class="sub-menu-container">
                 <ul class="sub-menu">
                     <li class="grouped-mitem">
-                        <a href="javascript:void(0);">ALL GAMES</a>
+                        <a href="/">ALL GAMES</a>
                     </li>
                     <li>
                         <a href="javascript:void(0);">UNDERWORLD LIFE</a>
@@ -27,17 +27,13 @@
             </div>
         </li>
         <li>
-            <a href="javascript:void(0);">NEWS</a>
+            <a href="/">NEWS</a>
         </li>
         <li>
-            <a href="javascript:void(0);">
-                <span>twitter</span>
-            </a>
+            <a href="https://twitter.com/i/flow/consent_flow" target="_blank" class="icon-image_icon_tw"></a>
         </li>
         <li>
-            <a href="javascript:void(0);">
-                <span>facebook</span>
-            </a>
+            <a href="https://www.facebook.com/" target="_blank" class="icon-image_icon_fb"></a>
         </li>
 
     </ul>
@@ -50,6 +46,8 @@
 </script>
 
 <style scoped type="scss">
+
+    @import "~succotash-company-homepage/assets/atlas_icons.css";
 
     .top_menu_bar {
         display: flex;
@@ -75,9 +73,15 @@
     .top_menu_bar > li a {
         color   : #fff;
         display : block;
-        height  : 100%;
-        width   : 100%;
         text-decoration: none;
+    }
+
+    .top_menu_bar > li a.icon-image_icon_fb:hover {
+        background-position: -68px -46px;
+    }
+
+    .top_menu_bar > li a.icon-image_icon_tw:hover {
+        background-position: -68px -15px;
     }
 
     .top_menu_bar > li a.submenuItem {
