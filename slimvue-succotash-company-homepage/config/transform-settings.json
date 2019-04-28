@@ -2,5 +2,9 @@
     "my-custom-element": [
         "attribute-to-transform-to-require",
         "another-attribute-to-transform-to-require"
+    ],
+    "imageItem": [
+        "imgsrc",
+        "src",
     ]
 }

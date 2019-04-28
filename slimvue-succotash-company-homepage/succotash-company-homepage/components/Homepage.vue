@@ -6,12 +6,7 @@
                 <span>FEATURED GAMES</span>
             </div>
             <div id="screen-shots-images">
-                <img src="~succotash-company-homepage/assets/images/game_pic1.jpg" class="screen-shot-item"/>
-                <img src="~succotash-company-homepage/assets/images/game_pic2.jpg" class="screen-shot-item"/>
-                <img src="~succotash-company-homepage/assets/images/game_pic3.jpg" class="screen-shot-item"/>
-                <img src="~succotash-company-homepage/assets/images/game_pic4.jpg" class="screen-shot-item"/>
-                <img src="~succotash-company-homepage/assets/images/game_pic5.jpg" class="screen-shot-item"/>
-                <img src="~succotash-company-homepage/assets/images/game_pic6.jpg" class="screen-shot-item"/>
+                <imageItem v-for="item in this.screenShotImages" :key="item"  :imgsrc="item" :classname="imageItemClass"></imageItem>
             </div>
             <div id="footers">
                 <span>@2012-2019 XXXXX LIMITED. All rights reserved</span>
@@ -21,8 +16,25 @@
 </template>
 
 <script>
+    import imageItem from "./sub/ImageItem.vue";
     export default {
         name       : 'homepage',
+        components : {
+            imageItem
+        },
+        data : function () {
+            return {
+                imageItemClass : 'screen-shot-item',
+                screenShotImages : [
+                    "~succotash-company-homepage/assets/images/game_pic1.jpg",
+                    "~succotash-company-homepage/assets/images/game_pic2.jpg",
+                    "~succotash-company-homepage/assets/images/game_pic3.jpg",
+                    "~succotash-company-homepage/assets/images/game_pic4.jpg",
+                    "~succotash-company-homepage/assets/images/game_pic5.jpg",
+                    "~succotash-company-homepage/assets/images/game_pic6.jpg",
+                ],
+            };
+        }
     };
 </script>
 
