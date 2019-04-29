@@ -7,5 +7,5 @@
         }
     },
     "node_sub_projects": ["slimvue-succotash-company-homepage"],
-    "composer_enabled": true
+    "composer_enabled": false
 }
