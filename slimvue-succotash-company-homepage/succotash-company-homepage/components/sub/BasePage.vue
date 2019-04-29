@@ -33,4 +33,8 @@
         padding   : 0;
         font-family: 'AdobeHebrew';
     }
+
+    #main-body {
+        min-width: 1200px;
+    }
 </style>
