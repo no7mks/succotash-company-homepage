@@ -1,6 +1,6 @@
 <template>
     <div id="footers">
-        <span>@2012-2019 XXXXX LIMITED. All rights reserved</span>
+        <span>@2012-2019 MARS GAMES LIMITED. All rights reserved</span>
     </div>
 </template>
 <script>

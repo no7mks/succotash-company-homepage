@@ -1,6 +1,6 @@
 module.exports = {
     index: {
-        pageTitle: 'XXX GAMES'
+        pageTitle: 'MARS GAMES'
     },
     'game/terra-land': {
         pageTitle: 'Terra Land'
