@@ -12,7 +12,7 @@
                 <span>FEATURED GAMES</span>
             </div>
             <div id="screen-shots-images">
-                <imageItem v-for="img in screenShotImages" :imgsrc="img.img" :link="img.link" :key="img.img" class="screen-shot-item"></imageItem>
+                <imageItem v-for="img in screenShotImages" :imgsrc="img.img" :link="img.link" :key="img.img" classname="screen-shot-item"></imageItem>
             </div>
             <div id="footers">
                 <span>@2012-2019 XXXXX LIMITED. All rights reserved</span>
