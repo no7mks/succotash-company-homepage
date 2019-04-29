@@ -18,7 +18,7 @@
                 <span>SCREENS</span>
             </div>
             <div id="screen-shots-images">
-                <img v-for="img in screenShotImages" :src="img" class="screen-shot-item" />
+                <imageItem v-for="img in screenShotImages" :imgsrc="img.img" :link="img.link" :key="img.img" class="screen-shot-item"></imageItem>
             </div>
             <div id="footers">
                 <span>@2012-2019 XXXXX LIMITED. All rights reserved</span>

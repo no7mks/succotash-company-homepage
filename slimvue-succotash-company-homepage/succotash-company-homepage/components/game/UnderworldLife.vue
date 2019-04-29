@@ -15,12 +15,20 @@
         },
         data : function () {
             return {
-                screenShotImages : {
-                    img1: require("assets/images/hb_pic1.jpg"),
-                    img2: require("assets/images/hb_pic2.jpg"),
-                    img3: require("assets/images/hb_pic3.jpg"),
-                    img4: require("assets/images/hb_pic4.jpg"),
-                },
+                screenShotImages : [
+                    {
+                        img: require("assets/images/hb_pic1.jpg"),
+                    },
+                    {
+                        img: require("assets/images/hb_pic2.jpg"),
+                    },
+                    {
+                        img: require("assets/images/hb_pic3.jpg"),
+                    },
+                    {
+                        img: require("assets/images/hb_pic4.jpg"),
+                    },
+                ],
                 slideImages : {
                     img2: require("assets/images/top_bg2.jpg"),
                 },

@@ -15,10 +15,14 @@
         },
         data : function () {
             return {
-                screenShotImages : {
-                    img1: require("assets/images/yx_pic1.jpg"),
-                    img2: require("assets/images/yx_pic2.jpg"),
-                },
+                screenShotImages : [
+                    {
+                        img: require("assets/images/yx_pic1.jpg"),
+                    },
+                    {
+                        img: require("assets/images/yx_pic2.jpg"),
+                    },
+                ],
                 slideImages : {
                     img2: require("assets/images/top_bg1.jpg"),
                 },

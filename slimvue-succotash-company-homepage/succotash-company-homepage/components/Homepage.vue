@@ -12,7 +12,7 @@
                 <span>FEATURED GAMES</span>
             </div>
             <div id="screen-shots-images">
-                <img v-for="img in screenShotImages" :src="img" class="screen-shot-item" />
+                <imageItem v-for="img in screenShotImages" :imgsrc="img.img" :link="img.link" :key="img.img" class="screen-shot-item"></imageItem>
             </div>
             <div id="footers">
                 <span>@2012-2019 XXXXX LIMITED. All rights reserved</span>
@@ -36,14 +36,28 @@
         data : function () {
             return {
                 imageItemClass : 'screen-shot-item',
-                screenShotImages : {
-                    img1: require("assets/images/game_pic1.jpg"),
-                    img2: require("assets/images/game_pic2.jpg"),
-                    img3: require("assets/images/game_pic3.jpg"),
-                    img4: require("assets/images/game_pic4.jpg"),
-                    img5: require("assets/images/game_pic5.jpg"),
-                    img6: require("assets/images/game_pic6.jpg"),
-                },
+                screenShotImages : [
+                    {
+                        img: require("assets/images/game_pic1.jpg"),
+                        link: "/game/underworld-life.html"
+                    },
+                    {
+                        img: require("assets/images/game_pic2.jpg"),
+                        link: "/game/terra-land.html"
+                    },
+                    {
+                        img: require("assets/images/game_pic3.jpg")
+                    },
+                    {
+                        img: require("assets/images/game_pic4.jpg")
+                    },
+                    {
+                        img: require("assets/images/game_pic5.jpg")
+                    },
+                    {
+                        img: require("assets/images/game_pic6.jpg")
+                    },
+                ],
                 slideImages : {
                     img1: require("assets/images/top_bg1.jpg"),
                     img2: require("assets/images/top_bg2.jpg"),
