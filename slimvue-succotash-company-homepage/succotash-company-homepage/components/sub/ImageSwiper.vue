@@ -76,11 +76,13 @@
     }
 
     .swiper-button-next {
-        right: 57px;
+        right: 50%;
+        margin-right: -703px;
     }
 
     .swiper-button-prev {
-        left: 57px;
+        left: 50%;
+        margin-left: -703px;
     }
 
     .top-bg-img {
