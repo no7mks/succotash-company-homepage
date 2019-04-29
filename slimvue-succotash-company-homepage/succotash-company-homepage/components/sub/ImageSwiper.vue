@@ -58,10 +58,6 @@
     @import "~succotash-company-homepage/assets/swiper.min.css";
     @import "~succotash-company-homepage/assets/atlas_icons.css";
 
-
-    $top-bg-img1 : url("~succotash-company-homepage/assets/images/top_bg1.jpg");
-    $top-bg-img2 : url("~succotash-company-homepage/assets/images/top_bg2.jpg");
-
     .swiper-container {
         width: 100%;
         height: 600px;
@@ -91,13 +87,5 @@
         background-repeat: no-repeat;
         background-position: center;
     }
-
-    .top-bg1 {
-        background-image: $top-bg-img1;
-    }
-    .top-bg2 {
-        background-image: $top-bg-img2;
-    }
-
 
 </style>
