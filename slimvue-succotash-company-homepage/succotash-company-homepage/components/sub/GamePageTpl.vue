@@ -121,6 +121,7 @@
         padding: 20px 15px 20px 15px;
         color: #402828;
         font-size: 24px;
+        font-family: "AdobeHebrew";
     }
 
     .screen-shot-item {

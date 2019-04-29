@@ -1,12 +1,12 @@
 module.exports = {
     index: {
-        pageTitle: 'test1'
+        pageTitle: 'XXX GAMES'
     },
     'game/terra-land': {
-        pageTitle: 'test1'
+        pageTitle: 'Terra Land'
     },
     'game/underworld-life': {
-        pageTitle: 'test1'
+        pageTitle: 'Underworld life'
     },
 
 }
