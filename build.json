@@ -5,5 +5,7 @@
             "hosts": "www.marsgames.com",
             "root" : "dist"
         }
-    }
+    },
+    "node_sub_projects": ["slimvue-succotash-company-homepage"],
+    "composer_enabled": true
 }
