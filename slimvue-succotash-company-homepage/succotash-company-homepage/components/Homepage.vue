@@ -2,7 +2,7 @@
     <div id="main">
         <div id="screen1">
             <div id="top-bar">
-                <img id="logo" src="~succotash-company-homepage/assets/images/logo.png"/>
+                <Logo></Logo>
                 <topMenu></topMenu>
             </div>
             <ImageSwiper :slide-images="slideImages"></ImageSwiper>
@@ -14,9 +14,7 @@
             <div id="screen-shots-images">
                 <imageItem v-for="img in screenShotImages" :imgsrc="img.img" :link="img.link" :key="img.img" classname="screen-shot-item"></imageItem>
             </div>
-            <div id="footers">
-                <span>@2012-2019 XXXXX LIMITED. All rights reserved</span>
-            </div>
+            <Footer></Footer>
         </div>
     </div>
 </template>
@@ -25,13 +23,17 @@
     import imageItem from "./sub/ImageItem.vue";
     import topMenu from "./sub/topMenu.vue";
     import ImageSwiper from './sub/ImageSwiper';
+    import Logo from './sub/Logo';
+    import Footer from './sub/Footer';
 
     export default {
         name       : 'homepage',
         components : {
             imageItem,
             topMenu,
-            ImageSwiper
+            ImageSwiper,
+            Logo,
+            Footer
         },
         data : function () {
             return {
@@ -121,16 +123,7 @@
         justify-content: space-between;
     }
 
-    #footers {
-        width: 100%;
-        height: 55px;
-        background-color:rgba(40,37,31,0.9);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        opacity:0.6;
-        color: #847D6E;
-    }
+
 
     .screen-shot-item {
         width: 388px;
@@ -150,12 +143,6 @@
         z-index: 9999;
         left: 50%;
         margin-left: -600px;
-    }
-
-    #logo{
-        width: 155px;
-        height: 71px;
-        margin-top: 20px;
     }
 
 </style>
