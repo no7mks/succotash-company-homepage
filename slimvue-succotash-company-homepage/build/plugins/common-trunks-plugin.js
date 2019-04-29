@@ -62,9 +62,13 @@ Object.keys(config.getEntries()).forEach((entry) => {
         filename       : path.join(config.build.buildOutputRoot, 'twigs/pages', subPath, `${file}.twig`),
     }));
     if (config.shouldOutputHtml()) {
+
+        console.log('entry is:');
+        console.log(entry);
         // noinspection JSUnresolvedVariable
         plugins.push(new HtmlWebpackPlugin({
             title          : entry,
+            pageTitle      : config.pageData[entry].pageTitle,
             chunksSortMode : 'manual',
             inject         : "body",
             chunks         : ['manifest', 'vendor', 'commons', entry],

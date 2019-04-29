@@ -4,10 +4,12 @@ const path = require('path');
 const merge = require('webpack-merge');
 const rreaddir = require('recursive-readdir-sync');
 const fs = require('fs-extra');
+const pageData = require('./pageData');
 
 let packageInfo = fs.readJsonSync(path.resolve(__dirname, '../package.json'));
 
 module.exports = {
+    pageData : pageData,
     build            : {
         buildOutputRoot      : path.resolve(__dirname, '../dist'),
         assetsSubDirectory   : 'assets',
