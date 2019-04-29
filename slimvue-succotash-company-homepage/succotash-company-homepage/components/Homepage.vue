@@ -129,6 +129,7 @@
     .screen-shots-images-item-container {
         width: 388px;
         height: 309px;
+        position: relative;
     }
 
     .screen-shot-item {
@@ -136,8 +137,24 @@
         height: 289px;
         margin-top: 20px;
     }
-    .screen-shot-item:hover {
+
+    .screen-shots-images-item-container span {
+        position: absolute;
+        width: 388px;
+        height: 289px;
+        top: 20px;
+        left: 0;
+        display: none;
+        background-color:rgba(0,0,0,0.5);
+    }
+
+    .screen-shots-images-item-container a:hover img{
         transform: scale(1.02);
+    }
+
+    .screen-shots-images-item-container a:hover span {
+        transform: scale(1.02);
+        display: block;
         border: solid 1px #FECC7B;
     }
 

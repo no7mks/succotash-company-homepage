@@ -1,8 +1,8 @@
 <template>
-    <a v-if="this.link" :href="this.link" target="_blank" style="display: block">
+    <a :href="getLink()" target="_blank" style="display: block">
         <img :src="this.imgsrc" :class="this.classname"/>
+        <span></span>
     </a>
-    <img v-else :src="this.imgsrc" :class="this.classname"/>
 </template>
 
 <script>
@@ -21,10 +21,17 @@
                 type : String,
                 required: false
             }
+        },
+        methods: {
+            getLink() {
+                if (this.link) {
+                    return this.link;
+                }
+                else {
+                    return 'javascript:void(0);';
+                }
+
+            },
         }
     };
 </script>
-
-<style scoped>
-
-</style>
