@@ -1,0 +1,9 @@
+{
+    "targets": {
+        "company-site": {
+            "type" : "static",
+            "hosts": "www.marsgames.com",
+            "root" : "dist"
+        }
+    }
+}
