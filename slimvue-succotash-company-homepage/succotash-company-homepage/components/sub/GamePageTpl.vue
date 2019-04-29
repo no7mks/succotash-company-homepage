@@ -123,8 +123,8 @@
         margin-top: 20px;
     }
     .screen-shot-item:hover {
-        transform: scale(1.02);
-        border: solid 1px #FECC7B;
+        /*transform: scale(1.02);*/
+        /*border: solid 1px #FECC7B;*/
     }
 
     #top-bar {
