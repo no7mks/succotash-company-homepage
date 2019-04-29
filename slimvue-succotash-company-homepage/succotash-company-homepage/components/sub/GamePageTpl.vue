@@ -1,31 +1,34 @@
 <template>
-    <div id="main">
-        <div id="screen1">
-            <div id="top-bar">
-                <Logo></Logo>
-                <topMenu></topMenu>
+    <base-page>
+        <div id="main" slot="page-content">
+            <div id="screen1">
+                <div id="top-bar">
+                    <Logo></Logo>
+                    <topMenu></topMenu>
+                </div>
+                <ImageSwiper :slide-images="slideImages"></ImageSwiper>
             </div>
-            <ImageSwiper :slide-images="slideImages"></ImageSwiper>
+            <div id="screen2">
+                <div class="screen-shots-title">
+                    <span>ABOUT</span>
+                </div>
+                <div id="game-description-block">
+                    <p>{{gameDescription}}</p>
+                </div>
+                <div class="screen-shots-title">
+                    <span>SCREENS</span>
+                </div>
+                <div id="screen-shots-images">
+                    <imageItem v-for="img in screenShotImages" :imgsrc="img.img" :link="img.link" :key="img.img" classname="screen-shot-item"></imageItem>
+                </div>
+                <Footer></Footer>
+            </div>
         </div>
-        <div id="screen2">
-            <div class="screen-shots-title">
-                <span>ABOUT</span>
-            </div>
-            <div id="game-description-block">
-                <p>{{gameDescription}}</p>
-            </div>
-            <div class="screen-shots-title">
-                <span>SCREENS</span>
-            </div>
-            <div id="screen-shots-images">
-                <imageItem v-for="img in screenShotImages" :imgsrc="img.img" :link="img.link" :key="img.img" classname="screen-shot-item"></imageItem>
-            </div>
-            <Footer></Footer>
-        </div>
-    </div>
+    </base-page>
 </template>
 
 <script>
+    import BasePage from "./BasePage";
     import imageItem from "./ImageItem.vue";
     import topMenu from "./topMenu.vue";
     import ImageSwiper from './ImageSwiper';
@@ -39,7 +42,8 @@
             topMenu,
             ImageSwiper,
             Logo,
-            Footer
+            Footer,
+            BasePage
         },
         props : {
             screenShotImages: {

@@ -1,27 +1,30 @@
 <template>
-    <div id="main">
-        <div id="screen1">
-            <div id="top-bar">
-                <Logo></Logo>
-                <topMenu></topMenu>
-            </div>
-            <ImageSwiper :slide-images="slideImages"></ImageSwiper>
-        </div>
-        <div id="screen2">
-            <div id="screen-shots-title" class="s2-block">
-                <span>FEATURED GAMES</span>
-            </div>
-            <div id="screen-shots-images">
-                <div v-for="img in screenShotImages" class="screen-shots-images-item-container">
-                    <imageItem  :imgsrc="img.img" :link="img.link" :key="img.img" classname="screen-shot-item"></imageItem>
+    <base-page>
+        <div id="main" slot="page-content">
+            <div id="screen1">
+                <div id="top-bar">
+                    <Logo></Logo>
+                    <topMenu></topMenu>
                 </div>
+                <ImageSwiper :slide-images="slideImages"></ImageSwiper>
             </div>
-            <Footer></Footer>
+            <div id="screen2">
+                <div id="screen-shots-title" class="s2-block">
+                    <span>FEATURED GAMES</span>
+                </div>
+                <div id="screen-shots-images">
+                    <div v-for="img in screenShotImages" class="screen-shots-images-item-container">
+                        <imageItem  :imgsrc="img.img" :link="img.link" :key="img.img" classname="screen-shot-item"></imageItem>
+                    </div>
+                </div>
+                <Footer></Footer>
+            </div>
         </div>
-    </div>
+    </base-page>
 </template>
 
 <script>
+    import BasePage from "./sub/BasePage";
     import imageItem from "./sub/ImageItem.vue";
     import topMenu from "./sub/topMenu.vue";
     import ImageSwiper from './sub/ImageSwiper';
@@ -35,7 +38,8 @@
             topMenu,
             ImageSwiper,
             Logo,
-            Footer
+            Footer,
+            BasePage
         },
         data : function () {
             return {
@@ -73,31 +77,7 @@
 
 <style lang="scss">
 
-    @font-face {
-        font-family: 'AdobeHebrew';
-        src:
-        url("~succotash-company-homepage/assets/font/AdobeHebrew-Bold.svg#AdobeHebrew-Bold") format("svg"),
-        url("~succotash-company-homepage/assets/font/AdobeHebrew-Bold.ttf") format("truetype"),
-        url("~succotash-company-homepage/assets/font/AdobeHebrew-Bold.woff") format("woff"),
-        url("~succotash-company-homepage/assets/font/AdobeHebrew-Bold.woff2") format("woff2");
-    }
-    @font-face {
-        font-family: 'PenumbraSansStd-Bold';
-        src:
-        url("~succotash-company-homepage/assets/font/PenumbraSansStd-Bold.svg#PenumbraSansStd-Bold") format("svg"),
-        url("~succotash-company-homepage/assets/font/PenumbraSansStd-Bold.ttf") format("truetype"),
-        url("~succotash-company-homepage/assets/font/PenumbraSansStd-Bold.woff") format("woff"),
-        url("~succotash-company-homepage/assets/font/PenumbraSansStd-Bold.woff2") format("woff2");
-    }
-
     $s2-bk-img : url("~succotash-company-homepage/assets/images/content_bg.jpg");
-
-    body {
-        min-width : 1000px;
-        margin    : 0;
-        padding   : 0;
-        font-family: 'PenumbraSansStd-Bold';
-    }
 
     #screen1 {
         width: 100%;
