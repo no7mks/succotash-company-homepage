@@ -4,7 +4,10 @@
             <a href="/">ABOUT</a>
         </li>
         <li class="li-submenuItem">
-            <a class="submenuItem" href="javascript:void(0);">FEATURED GAMES</a>
+            <a class="submenuItem" href="javascript:void(0);">
+                <span>FEATURED GAMES</span>
+                <i></i>
+            </a>
             <div class="sub-menu-container">
                 <ul class="sub-menu">
                     <li class="grouped-mitem">
@@ -86,6 +89,15 @@
 
     .top_menu_bar > li a.submenuItem {
         color: #C2aB7D;
+        position: relative;
+    }
+
+    .top_menu_bar > li a.submenuItem i {
+        position: absolute;
+        border:5px solid transparent;
+        border-top-color:#C2aB7D;
+        right: -16px;
+        top: 4px;
     }
 
     .sub-menu {
