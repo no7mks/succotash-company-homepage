@@ -12,7 +12,9 @@
                 <span>FEATURED GAMES</span>
             </div>
             <div id="screen-shots-images">
-                <imageItem v-for="img in screenShotImages" :imgsrc="img.img" :link="img.link" :key="img.img" classname="screen-shot-item"></imageItem>
+                <div v-for="img in screenShotImages" class="screen-shots-images-item-container">
+                    <imageItem  :imgsrc="img.img" :link="img.link" :key="img.img" classname="screen-shot-item"></imageItem>
+                </div>
             </div>
             <Footer></Footer>
         </div>
@@ -124,6 +126,10 @@
     }
 
 
+    .screen-shots-images-item-container {
+        width: 388px;
+        height: 309px;
+    }
 
     .screen-shot-item {
         width: 388px;
