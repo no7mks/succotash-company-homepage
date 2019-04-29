@@ -11,10 +11,10 @@
                         <a href="/">ALL GAMES</a>
                     </li>
                     <li>
-                        <a href="javascript:void(0);">UNDERWORLD LIFE</a>
+                        <a href="/game/underworld-life.html">UNDERWORLD LIFE</a>
                     </li>
                     <li>
-                        <a href="javascript:void(0);">TERRA LAND</a>
+                        <a href="/game/terra-land.html">TERRA LAND</a>
                     </li>
                     <li>
                         <a href="javascript:void(0);">THE CREAZY DEAD</a>

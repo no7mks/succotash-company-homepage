@@ -6,7 +6,7 @@ const baseWebpackConfig = require('./webpack.base.conf');
 // noinspection JSUnresolvedFunction
 module.exports = merge(baseWebpackConfig, {
     output  : {
-        publicPath : "/slimvue-succotash-company-homepage/dist/",
+        publicPath : "/",
     },
     module  : {
         rules : utils.styleLoaders({sourceMap : config.build.cssSourceMap}),
