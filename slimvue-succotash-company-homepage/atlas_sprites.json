@@ -1,0 +1,11 @@
+{
+    "icon-image" : {
+        "input"            : [
+            "succotash-company-homepage/assets/images/icons/*"
+        ],
+        "output_image"     : "succotash-company-homepage/assets/",
+        "output_css"       : "succotash-company-homepage/assets/",
+        "image_name"       : "atlas_icons.png",
+        "css_name"         : "atlas_icons.css"
+    }
+}
