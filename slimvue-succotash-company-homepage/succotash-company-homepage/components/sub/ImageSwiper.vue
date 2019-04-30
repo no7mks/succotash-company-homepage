@@ -3,7 +3,9 @@
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
             <!-- Slides -->
-            <div v-for="img in this.slideImages" :style="getAvatarStyle(img.img)" class="swiper-slide top-bg-img"></div>
+            <div v-for="img in this.slideImages" :style="getAvatarStyle(img.img)" class="swiper-slide top-bg-img">
+                <a v-if="img.link" :href="img.link"></a>
+            </div>
         </div>
 
         <!-- If we need navigation buttons -->
@@ -43,7 +45,7 @@
                 direction: 'horizontal',
                 loop: this.isLoopEnabled(),
                 autoplay: {
-                    delay: 50000,
+                    delay: 5000,
                 },
                 // Navigation arrows
                 navigation: {
@@ -88,6 +90,17 @@
         height: 600px;
         background-repeat: no-repeat;
         background-position: center;
+        position: relative;
+    }
+
+    .top-bg-img a {
+        display: block;
+        width: 1100px;
+        height: 475px;
+        position: absolute;
+        bottom: 0px;
+        left: 50%;
+        margin-left: -550px;
     }
 
 </style>
