@@ -14,7 +14,7 @@
                 </div>
                 <div id="screen-shots-images">
                     <div v-for="img in screenShotImages" class="screen-shots-images-item-container">
-                        <imageItem  :imgsrc="img.img" :link="img.link" :key="img.img" classname="screen-shot-item"></imageItem>
+                        <imageItem  :imgsrc="img.img" :link="img.link" :key="img.img" :title="img.title" classname="screen-shot-item"></imageItem>
                     </div>
                 </div>
                 <Footer></Footer>
@@ -47,17 +47,21 @@
                 screenShotImages : [
                     {
                         img: require("assets/images/game_pic1.jpg"),
-                        link: "/game/underworld-life.html"
+                        link: "/game/underworld-life.html",
+                        title: "UNDERWORLD LIFE",
                     },
                     {
                         img: require("assets/images/game_pic2.jpg"),
-                        link: "/game/terra-land.html"
+                        link: "/game/terra-land.html",
+                        title: "TERRA LAND",
                     },
                     {
-                        img: require("assets/images/game_pic3.jpg")
+                        img: require("assets/images/game_pic3.jpg"),
+                        title: "THE CREAZY DEAD",
                     },
                     {
-                        img: require("assets/images/game_pic4.jpg")
+                        img: require("assets/images/game_pic4.jpg"),
+                        title: "STEEL FORCE",
                     },
                     {
                         img: require("assets/images/game_pic5.jpg")
@@ -150,6 +154,17 @@
         left: 0;
         display: none;
         background-color:rgba(0,0,0,0.5);
+
+    }
+
+    .screen-shots-images-item-container span div {
+        color: #FFFFFF;
+        font-family: AdobeHebrew;
+        font-size: 28px;
+        position: absolute;
+        bottom: 25px;
+        width: 388px;
+        text-align: center;
     }
 
     .screen-shots-images-item-container a:hover img{
