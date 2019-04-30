@@ -33,10 +33,10 @@
             <a href="/">NEWS</a>
         </li>
         <li>
-            <a href="javascript:void(0);" target="_blank" class="icon-image_icon_tw"></a>
+            <a href="javascript:void(0);" target="" class="icon-image_icon_tw"></a>
         </li>
         <li>
-            <a href="javascript:void(0);" target="_blank" class="icon-image_icon_fb"></a>
+            <a href="javascript:void(0);" target="" class="icon-image_icon_fb"></a>
         </li>
 
     </ul>

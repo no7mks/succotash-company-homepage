@@ -1,5 +1,5 @@
 <template>
-    <a :href="getLink()" target="_blank" :style="getAnchorStyle()">
+    <a :href="getLink()" :target="getTarget()" :style="getAnchorStyle()">
         <img :src="this.imgsrc" :class="this.classname"/>
         <span></span>
     </a>
@@ -31,6 +31,14 @@
                     return 'javascript:void(0);';
                 }
 
+            },
+            getTarget() {
+                if (this.link) {
+                    return '_blank';
+                }
+                else {
+                    return '';
+                }
             },
             getAnchorStyle() {
                 if (this.link) {
