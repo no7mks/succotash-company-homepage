@@ -32,6 +32,7 @@
         margin    : 0;
         padding   : 0;
         font-family: 'Arial';
+        background-color: #000000;
     }
 
     #main-body {
