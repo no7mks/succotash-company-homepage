@@ -37,4 +37,18 @@
     #main-body {
         min-width: 1200px;
     }
+
+    /*bellow for style debug*/
+
+    #test-bg-img {
+        display: none;
+        position: absolute;
+        left:0px;top: 0px;
+        width: 100%; height: 1543px;
+        background: url('/static/main-bg2.png') top center no-repeat;
+    }
+    #slimvue-app {
+        /*opacity: 0.8;*/
+    }
+
 </style>
