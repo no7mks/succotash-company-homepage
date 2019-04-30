@@ -51,7 +51,7 @@
                 required : true,
             },
             slideImages: {
-                type     : Object,
+                type     : Array,
                 required : true,
             },
             gameDescription: {

@@ -3,7 +3,7 @@
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
             <!-- Slides -->
-            <div v-for="img in this.slideImages" :style="getAvatarStyle(img)" class="swiper-slide top-bg-img"></div>
+            <div v-for="img in this.slideImages" :style="getAvatarStyle(img.img)" class="swiper-slide top-bg-img"></div>
         </div>
 
         <!-- If we need navigation buttons -->
@@ -19,7 +19,7 @@
         name: "image-swiper",
         props : {
             slideImages: {
-                type     : Object,
+                type     : Array,
                 required : true,
             },
         },
@@ -42,7 +42,9 @@
                 // Optional parameters
                 direction: 'horizontal',
                 loop: this.isLoopEnabled(),
-                autoplay: false,
+                autoplay: {
+                    delay: 50000,
+                },
                 // Navigation arrows
                 navigation: {
                     nextEl: '.swiper-button-next',

@@ -66,10 +66,16 @@
                         img: require("assets/images/game_pic6.jpg")
                     },
                 ],
-                slideImages : {
-                    img1: require("assets/images/top_bg1.jpg"),
-                    img2: require("assets/images/top_bg2.jpg"),
-                },
+                slideImages : [
+                    {
+                        img: require("assets/images/top_bg1.jpg"),
+                        link: "/game/terra-land.html"
+                    },
+                    {
+                        img: require("assets/images/top_bg2.jpg"),
+                        link: "/game/underworld-life.html"
+                    }
+                ],
             };
         }
     };
