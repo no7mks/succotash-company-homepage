@@ -1,5 +1,7 @@
 <template>
-    <img id="logo" src="~succotash-company-homepage/assets/images/logo.png"/>
+    <a href="/">
+        <img id="logo" src="~succotash-company-homepage/assets/images/logo.png"/>
+    </a>
 </template>
 
 <script>

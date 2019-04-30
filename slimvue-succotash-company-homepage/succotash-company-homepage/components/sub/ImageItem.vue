@@ -1,7 +1,7 @@
 <template>
     <a :href="getLink()" :target="getTarget()" :style="getAnchorStyle()">
         <img :src="this.imgsrc" :class="this.classname"/>
-        <span></span>
+        <span><div>{{this.title}}</div></span>
     </a>
 </template>
 
@@ -18,6 +18,10 @@
                 required : true,
             },
             link : {
+                type : String,
+                required: false
+            },
+            title : {
                 type : String,
                 required: false
             }
