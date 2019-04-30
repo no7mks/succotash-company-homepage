@@ -1,5 +1,5 @@
 <template>
-    <a :href="getLink()" target="_blank" style="display: block">
+    <a :href="getLink()" target="_blank" :style="getAnchorStyle()">
         <img :src="this.imgsrc" :class="this.classname"/>
         <span></span>
     </a>
@@ -32,6 +32,14 @@
                 }
 
             },
+            getAnchorStyle() {
+                if (this.link) {
+                    return "display:block;cursor:pointer;";
+                }
+                else {
+                    return "display:block;cursor:default;";
+                }
+            }
         }
     };
 </script>

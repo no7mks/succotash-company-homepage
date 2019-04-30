@@ -1,6 +1,6 @@
 <template>
     <div id="footers">
-        <span>@2012-2019 MARS GAMES LIMITED. All rights reserved</span>
+        <span>©2019 MARS GAMES LIMITED. All rights reserved</span>
     </div>
 </template>
 <script>
@@ -20,5 +20,7 @@
         opacity:0.6;
         color: #847D6E;
         margin-top: 50px;
+        font-family: Arial;
+        font-size: 14px;
     }
 </style>

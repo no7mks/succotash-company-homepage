@@ -20,10 +20,10 @@
                         <a href="/game/terra-land.html">TERRA LAND</a>
                     </li>
                     <li>
-                        <a href="javascript:void(0);">THE CREAZY DEAD</a>
+                        <a href="javascript:void(0);" class="no-link">THE CREAZY DEAD</a>
                     </li>
                     <li>
-                        <a href="javascript:void(0);">STEEL FORCE</a>
+                        <a href="javascript:void(0);" class="no-link">STEEL FORCE</a>
                     </li>
 
                 </ul>
@@ -33,10 +33,10 @@
             <a href="/">NEWS</a>
         </li>
         <li>
-            <a href="https://twitter.com/i/flow/consent_flow" target="_blank" class="icon-image_icon_tw"></a>
+            <a href="javascript:void(0);" target="_blank" class="icon-image_icon_tw"></a>
         </li>
         <li>
-            <a href="https://www.facebook.com/" target="_blank" class="icon-image_icon_fb"></a>
+            <a href="javascript:void(0);" target="_blank" class="icon-image_icon_fb"></a>
         </li>
 
     </ul>
@@ -81,10 +81,14 @@
 
     .top_menu_bar > li a.icon-image_icon_fb:hover {
         background-position: -68px -46px;
-    }
 
+    }
     .top_menu_bar > li a.icon-image_icon_tw:hover {
         background-position: -68px -15px;
+    }
+
+    .top_menu_bar > li a.icon-image_icon_fb, .top_menu_bar > li a.icon-image_icon_tw {
+        cursor: default;
     }
 
     .top_menu_bar > li a.submenuItem {
@@ -150,4 +154,9 @@
     .sub-menu > li:hover a {
         color: #332c1d;
     }
+
+    .sub-menu > li a.no-link {
+        cursor: default;
+    }
+
 </style>

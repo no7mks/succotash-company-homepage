@@ -87,7 +87,7 @@
 
     #screen2 {
         width: 100%;
-        height: 960px;
+        min-height: 945px;
         background-image: $s2-bk-img;
         background-repeat: repeat;
 
@@ -103,7 +103,7 @@
 
     #screen-shots-title {
         width: 1200px;
-        height: 90px;
+        height: 88px;
         color: #402828;
         font-size: 30px;
         font-weight: bold;
@@ -116,7 +116,7 @@
 
     #screen-shots-images {
         width: 1200px;
-        height: 100%;
+        min-height: 739px;
         display: flex;
         flex-wrap: wrap;
         align-content: flex-start;
