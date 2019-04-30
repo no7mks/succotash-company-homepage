@@ -87,7 +87,7 @@
 
     #screen2 {
         width: 100%;
-        height: 960px;
+        min-height: 850px;
         background-image: $s2-bk-img;
         background-repeat: repeat;
 
