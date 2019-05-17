@@ -1,7 +1,7 @@
 <template>
     <ul class="top_menu_bar">
         <li>
-            <a href="/">ABOUT</a>
+            <a href="/" class="main_navi_btn">ABOUT</a>
         </li>
         <li class="li-submenuItem">
             <a class="submenuItem" href="javascript:void(0);">
@@ -30,7 +30,7 @@
             </div>
         </li>
         <li>
-            <a href="/">NEWS</a>
+            <a href="javascript:void(0);" class="no-link main_navi_btn">NEWS</a>
         </li>
         <li>
             <a href="javascript:void(0);" target="" class="icon-image_icon_tw"></a>
@@ -77,6 +77,10 @@
         color   : #fff;
         display : block;
         text-decoration: none;
+    }
+
+    .top_menu_bar > li a.main_navi_btn:hover {
+        color: #C2aB7D;
     }
 
     .top_menu_bar > li a.icon-image_icon_fb:hover {
@@ -155,7 +159,7 @@
         color: #332c1d;
     }
 
-    .sub-menu > li a.no-link {
+    .sub-menu > li a.no-link, .top_menu_bar > li a.no-link{
         cursor: default;
     }
 
