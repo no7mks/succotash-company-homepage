@@ -8,5 +8,8 @@ module.exports = {
     'game/underworld-life': {
         pageTitle: 'Underworld life'
     },
+    'about': {
+        pageTitle: 'About US'
+    },
 
 }
