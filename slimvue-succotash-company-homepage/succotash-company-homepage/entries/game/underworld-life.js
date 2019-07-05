@@ -1,4 +1,5 @@
-import slimvue from 'slimvue';
-import UnderworldLife     from 'succotash-company-homepage/components/game/UnderworldLife';
+import wappage from 'succotash-company-homepage/components/_WAP/games/UnderworldLife';
+import pcpage from 'succotash-company-homepage/components/game/UnderworldLife';
+import {loadPage} from 'succotash-company-homepage/components/_WAP/js/base';
 
-slimvue.mount(UnderworldLife);
+loadPage(pcpage, wappage);

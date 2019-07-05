@@ -24,9 +24,9 @@
                 <transition name="bounce">
                     <ul class="games_side" v-if="show">
                         <li data-url="/game/underworld-life.html" @touchstart="hoverStartFn" @touchend="hoverEndFn" @click="gameHref">UNDERWORLD LIFE</li>
-                        <li data-url="/game/underworld-life.html" @touchstart="hoverStartFn" @touchend="hoverEndFn" @click="gameHref">TERRA LAND</li>
-                        <li data-url="/game/underworld-life.html" @touchstart="hoverStartFn" @touchend="hoverEndFn" @click="gameHref">THE CREAZY DEAD</li>
-                        <li data-url="/game/underworld-life.html" @touchstart="hoverStartFn" @touchend="hoverEndFn" @click="gameHref">STEEL FORCE</li>
+                        <li data-url="/game/terra-land.html" @touchstart="hoverStartFn" @touchend="hoverEndFn" @click="gameHref">TERRA LAND</li>
+                        <li data-url="" @touchstart="hoverStartFn" @touchend="hoverEndFn" @click="gameHref">THE CREAZY DEAD</li>
+                        <li data-url="" @touchstart="hoverStartFn" @touchend="hoverEndFn" @click="gameHref">STEEL FORCE</li>
                     </ul>
                 </transition>
                 <div class="company" @touchstart="hoverStartFn" @touchend="hoverEndFn"><a href="/">COMPANY</a></div>
@@ -73,17 +73,9 @@
             },
             gameHref: function () {
                 let _this = event.currentTarget;
-                if (_this.getAttribute('data-url') !== 'console_games') {
-                    window.location.href = _this.getAttribute('data-url') + '.html';
-                }
-                else {
-                    if (this.selfLang === 'zh') {
-                        window.open('https://tw-console.oasgames.com/');
-                    }
-                    else {
-                        window.open('https://en-console.oasgames.com/');
-                    }
-
+                let url = _this.getAttribute('data-url');
+                if (url.length > 0) {
+                    window.location.href = _this.getAttribute('data-url');
                 }
             },
             hoverStartFn:function(e) {

@@ -9,7 +9,9 @@
                 <div id="game-list">
                     <div class="game-item" v-for="game in this.gameList">
                         <div class="game-img">
-                            <img :src="game.img"/>
+                            <a :href="game.link">
+                                <img :src="game.img"/>
+                            </a>
                         </div>
                         <div class="game-name">{{game.title}}</div>
                         <div class="game-desc">{{game.desc}}</div>
