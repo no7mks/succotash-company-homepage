@@ -4,13 +4,12 @@ const isMobile = require('ismobilejs');
 
 let loadPage = function (pcPage, wapPage) {
     if (isMobile.any) {
+        px2rem();
         slimvue.mount(wapPage);
     }
     else {
         slimvue.mount(pcPage);
     }
 };
-
-px2rem();
 
 export {loadPage};
