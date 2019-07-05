@@ -2,7 +2,7 @@
     <header>
         <div class="clear header_box" ref="header_box">
             <a class="fl logo" href="/index.html">
-                <img src="~succotash-company-homepage/assets/images/logo.png" alt="">
+                <img src="~succotash-company-homepage/assets/images/wap/logo.png" alt="">
             </a>
             <a class="fr side" href="javascript:" @click="sideBar"></a>
         </div>
@@ -11,11 +11,12 @@
             <div class="hei-auto">
                 <div class="clear side_header_box _hover">
                     <a class="fl logo" href="/index.html">
-                        <img src="~succotash-company-homepage/assets/images/logo.png" alt="">
+                        <img src="~succotash-company-homepage/assets/images/wap/logo.png" alt="">
                     </a>
                     <a class="fr side_close" href="javascript:" @click="sideBar"></a>
                 </div>
-                <div class="games" @touchstart="hoverStartFn" @touchend="hoverEndFn" @click="dropDown">GAMES
+                <div class="games" @touchstart="hoverStartFn" @touchend="hoverEndFn" @click="dropDown">
+                    <span>GAMES</span>
                     <transition name="drop-down">
                         <i ref="drop"></i>
                     </transition>
@@ -101,34 +102,36 @@
 <style lang="scss" scoped>
 
     $btn-img-nav : url("~succotash-company-homepage/assets/images/wap/icon_nav.png");
-    $btn-img-nav-close : url("~succotash-company-homepage/assets/images/wap/icon_nav_close.png");
+    $btn-img-nav-close : url("~succotash-company-homepage/assets/images/wap/icon_nav.png");
     $btn-img-xiala : url("~succotash-company-homepage/assets/images/wap/icon_xiala.png");
 
     .header_box, .side_header_box {
-        height: 1.1rem;
+        height: .8rem;
         width: 6.4rem;
         background: #1C0B0A;
         position: fixed;
         top: 0;
         left: 0;
         z-index: 100;
-        .logo {
-            width: 155px;
-            height: 71px;
+        .logo{
             display: block;
             margin: 0.25rem 0 0 0.2rem;
+            img {
+                width: 148px;
+                height: 61px;
+            }
         }
         .side {
             background-image: $btn-img-nav;
             background-size: cover;
             width: 0.45rem;
-            height: 0.37rem;
-            margin: 0.32rem 0.2rem 0 0;
+            height: 0.3rem;
+            margin: 0.25rem 0.2rem 0 0;
         }
     }
 
     .hide_header {
-        height: 1.1rem;
+        height: .8rem;
         width: 6.4rem;
     }
 
@@ -148,10 +151,10 @@
             position: static;
             .side_close {
                 background-image: $btn-img-nav-close;
-                width: 0.3rem;
-                height: 0.3rem;
                 background-size: cover;
-                margin: 0.4rem 0.2rem 0 0;
+                width: 0.45rem;
+                height: 0.3rem;
+                margin: 0.25rem 0.2rem 0 0;
             }
         }
         a {
