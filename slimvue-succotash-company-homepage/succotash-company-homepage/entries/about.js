@@ -1,4 +1,16 @@
 import slimvue from 'slimvue';
-import aboutpage     from 'succotash-company-homepage/components/Aboutpage';
+import wappage from 'succotash-company-homepage/components/_WAP/aboutPage';
+import pcpage from 'succotash-company-homepage/components/Aboutpage';
+import px2rem from 'succotash-company-homepage/components/_WAP/js/px2rem';
 
-slimvue.mount(aboutpage);
+px2rem();
+
+const isMobile = require('ismobilejs');
+
+if (isMobile.any) {
+    slimvue.mount(wappage);
+}
+else {
+    slimvue.mount(pcpage);
+}
+
