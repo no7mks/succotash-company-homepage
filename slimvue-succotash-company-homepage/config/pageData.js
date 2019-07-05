@@ -11,5 +11,8 @@ module.exports = {
     'about': {
         pageTitle: 'About US'
     },
+    'game-list': {
+        pageTitle: 'Featured games'
+    },
 
 }

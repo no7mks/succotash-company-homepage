@@ -18,7 +18,7 @@
 
             </div>
             <di id="screen3">
-                <a>More Games >></a>
+                <a href="/game-list.html">More Games >></a>
             </di>
         </div>
     </base-page>
@@ -70,6 +70,7 @@
             height: 0.8rem;
             line-height: 0.8rem;
             width: 2.8rem;
+            color: #ffffff;
         }
     }
 

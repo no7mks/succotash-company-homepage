@@ -9,7 +9,7 @@
                             <img :src="game.img"/>
                         </div>
                         <div class="game-name">{{game.title}}</div>
-                        <div class="game-desc">{{game.desc}}</div>
+                        <div class="game-desc">{{game.full_desc}}</div>
                     </div>
                 </div>
             </div>
