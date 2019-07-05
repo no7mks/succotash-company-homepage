@@ -17,9 +17,9 @@
                 </div>
 
             </div>
-            <di id="screen3">
+            <div id="screen3">
                 <a href="/game-list.html">More Games >></a>
-            </di>
+            </div>
         </div>
     </base-page>
 </template>

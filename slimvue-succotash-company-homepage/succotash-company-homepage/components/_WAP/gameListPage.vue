@@ -39,9 +39,11 @@
     #screen1 {
         width: 6.4rem;
         #title {
+            height: 0.7rem;
+            line-height: 0.7rem;
+            background-color: #5C000B;
             text-align: center;
             font-size: 0.3rem;
-            margin-top: 0.5rem;
             margin-bottom: 0.3rem;
         }
 
