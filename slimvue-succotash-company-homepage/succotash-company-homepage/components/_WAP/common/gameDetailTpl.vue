@@ -79,15 +79,14 @@
         }
 
         .game-screen-shot {
-            display: flex;
-            flex-wrap: wrap;
-            align-content: center;
-            justify-content: space-between;
             .img-list {
+                display: flex;
+                flex-wrap: wrap;
+                align-content: center;
+                justify-content: space-between;
                 img {
                     width: 2.9rem;
                     height: 5rem;
-                    margin-right: 0.2rem;
                     margin-bottom: 0.2rem;
                 }
             }
