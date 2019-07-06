@@ -15,12 +15,7 @@
                     </a>
                     <a class="fr side_close" href="javascript:" @click="sideBar"></a>
                 </div>
-                <div class="games" @touchstart="hoverStartFn" @touchend="hoverEndFn" @click="dropDown">
-                    <span>GAMES</span>
-                    <transition name="drop-down">
-                        <i ref="drop"></i>
-                    </transition>
-                </div>
+                <div class="games" @touchstart="hoverStartFn" @touchend="hoverEndFn" @click="dropDown">GAMES<transition name="drop-down"><i ref="drop"></i></transition></div>
                 <transition name="bounce">
                     <ul class="games_side" v-if="show">
                         <li data-url="/game/underworld-life.html" @touchstart="hoverStartFn" @touchend="hoverEndFn" @click="gameHref">UNDERWORLD LIFE</li>
@@ -106,11 +101,12 @@
         left: 0;
         z-index: 100;
         .logo{
+            height: 0.5rem;
             display: block;
-            margin: 0.25rem 0 0 0.2rem;
+            margin: 0.16rem 0 0 0.2rem;
             img {
-                width: 148px;
-                height: 61px;
+                width: 1.1rem;
+                height: 0.5rem;
             }
         }
         .side {
