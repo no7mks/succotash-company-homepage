@@ -60,7 +60,6 @@
         }
 
         #game-detail {
-            width: 6.4rem;
             padding: 0 0.2rem 0 0.2rem;
         }
         .game-item {
