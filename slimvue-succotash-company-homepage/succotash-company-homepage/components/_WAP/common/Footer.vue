@@ -13,11 +13,11 @@
     };
 </script>
 
-<style scoped type="scss">
+<style scoped lang="scss">
     #footers {
         width: 6rem;
-        height: .45rem;
-        background-color:#100200;
+        height: .9rem;
+        background-color:#130200;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -31,10 +31,10 @@
 
         .logo {
             display: block;
-            margin: 0.4rem 0rem 0rem 0.2rem;
+            margin: 0.2rem 0rem 0.1rem 0rem;
             img {
-                width: 155px;
-                height: 71px;
+                width: 1.61rem;
+                height: 0.66rem;
             }
         }
 

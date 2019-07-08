@@ -2,11 +2,11 @@
     <base-page>
         <div id="main" slot="page-content">
             <div id="screen1">
-                <img src="~succotash-company-homepage/assets/images/about_top_bg.jpg">
+                <img src="~succotash-company-homepage/assets/images/wap/about.png">
             </div>
             <div id="screen2">
                 <div id="game-description-block">
-                    <p style="padding-top: 65px">
+                    <p style="padding-top: 0.28rem">
                         Mars Games is a mobile game publisher built by a group of passionate gamers and industry veterans.
                         Since we established in 2018, we've brought four games to the market.
                         Our goal is to bring the best games to the global market.
@@ -48,7 +48,8 @@
         img{
             display: block;
             width: 6.4rem;
-            height: 3.2rem;
+            height: 3.36rem;
+            margin-top: -0.6rem;
         }
     }
 
@@ -67,7 +68,7 @@
 
     #game-description-block p {
         margin: 0;
-        padding: 30px 30px 0px 30px;
+        padding: 0.25rem 0.2rem 0rem 0.2rem;
         color: #ffffff;
         font-size: .25rem;
         font-family: "Arial";

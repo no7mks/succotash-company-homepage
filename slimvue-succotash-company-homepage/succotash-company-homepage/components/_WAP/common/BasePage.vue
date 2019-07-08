@@ -47,7 +47,7 @@
         margin: 0;
         padding: 0;
         font-family: 'Arial';
-        background-color: #1C0B0A;
+        background-color: #260e09;
         color: #ffffff;
     }
 
@@ -60,7 +60,7 @@
         flex: 1;
         display: flex;
         flex-direction: column;
-        background-color: #1C0B0A;
+        background-color: #260e09;
         #divbottom {
             width: 100%;
             overflow: hidden;
