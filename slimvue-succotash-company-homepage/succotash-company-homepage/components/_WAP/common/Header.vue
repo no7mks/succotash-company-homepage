@@ -25,6 +25,7 @@
                     </ul>
                 </transition>
                 <div class="contact_us" @touchstart="hoverStartFn" @touchend="hoverEndFn"><a href="/about.html">COMPANY</a></div>
+                <div class="contact_us" @touchstart="hoverStartFn" @touchend="hoverEndFn"><a href="/contact-us.html">CONTACT US</a></div>
             </div>
 
         </div>

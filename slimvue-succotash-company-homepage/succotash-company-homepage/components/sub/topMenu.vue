@@ -30,7 +30,7 @@
             </div>
         </li>
         <li>
-            <a href="javascript:void(0);" class="no-link main_navi_btn">NEWS</a>
+            <a href="/contact-us.html" class="main_navi_btn">CONTACT US</a>
         </li>
         <li>
             <a href="javascript:void(0);" target="" class="icon-image_icon_tw"></a>

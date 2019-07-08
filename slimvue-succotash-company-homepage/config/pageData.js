@@ -14,5 +14,7 @@ module.exports = {
     'game-list': {
         pageTitle: 'Featured games'
     },
-
+    'contact-us': {
+        pageTitle: 'CONTACT US'
+    },
 }
