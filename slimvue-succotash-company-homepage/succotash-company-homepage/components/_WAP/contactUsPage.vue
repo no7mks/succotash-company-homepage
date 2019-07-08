@@ -6,7 +6,7 @@
             </div>
             <div id="screen2">
                 <div id="game-description-block">
-                    <p style="padding-top: 0.28rem">
+                    <p style="padding-top: 0.75rem">
                         We welcome all cooperation opportunities, including game develop, publish,
                         intellectual property licencing, investment and cross brand development etc.
                     </p>
@@ -37,8 +37,8 @@
         img{
             display: block;
             width: 6.4rem;
-            height: 3.36rem;
-            margin-top: -0.6rem;
+            height: 2.62rem;
+            margin-top: 0rem;
         }
     }
 
@@ -52,7 +52,7 @@
 
     #game-description-block {
         width: 100%;
-        padding-bottom: 0px;
+        padding-bottom: 0.6rem;
     }
 
     #game-description-block p {
