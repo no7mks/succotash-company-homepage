@@ -52,7 +52,7 @@
 
     #game-description-block {
         width: 100%;
-        padding-bottom: 0.6rem;
+        padding-bottom: 2.8rem;
     }
 
     #game-description-block p {
