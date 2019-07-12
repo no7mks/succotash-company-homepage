@@ -13,8 +13,8 @@
                 </div>
                 <div id="game-description-block">
                     <p style="padding-top: 65px">
-                        Mars Games is a mobile game publisher built by a group of passionate gamers and industry veterans.
-                        Since we established in 2018, we've brought four games to the market.
+                        Hydrogen Games is a mobile game publisher built by a group of passionate gamers and industry veterans.
+                        Since we established in 2018, we've brought four games under the brand Mars Games to the market.
                         Our goal is to bring the best games to the global market.
                     </p>
                     <p>
