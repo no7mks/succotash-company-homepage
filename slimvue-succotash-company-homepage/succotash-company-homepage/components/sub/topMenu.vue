@@ -1,7 +1,7 @@
 <template>
     <ul class="top_menu_bar">
         <li>
-            <a href="/" class="main_navi_btn">ABOUT</a>
+            <a href="/about.html" class="main_navi_btn">ABOUT</a>
         </li>
         <li class="li-submenuItem">
             <a class="submenuItem" href="javascript:void(0);">
@@ -30,7 +30,7 @@
             </div>
         </li>
         <li>
-            <a href="javascript:void(0);" class="no-link main_navi_btn">NEWS</a>
+            <a href="/contact-us.html" class="main_navi_btn">CONTACT US</a>
         </li>
         <li>
             <a href="javascript:void(0);" target="" class="icon-image_icon_tw"></a>

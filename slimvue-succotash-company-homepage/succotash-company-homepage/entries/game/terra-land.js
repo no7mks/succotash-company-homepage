@@ -1,4 +1,5 @@
-import slimvue from 'slimvue';
-import TerraLand     from 'succotash-company-homepage/components/game/TerraLand';
+import wappage from 'succotash-company-homepage/components/_WAP/games/TerraLand';
+import pcpage from 'succotash-company-homepage/components/game/TerraLand';
+import {loadPage} from 'succotash-company-homepage/components/_WAP/js/base';
 
-slimvue.mount(TerraLand);
+loadPage(pcpage, wappage);

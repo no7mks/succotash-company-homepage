@@ -17,6 +17,7 @@
     },
     "dependencies": {
         "element-ui": "^2.4.6",
+        "ismobilejs": "^0.5.2",
         "load-script": "^1.0.0",
         "moment": "^2.22.2",
         "swiper": "^4.5.0",

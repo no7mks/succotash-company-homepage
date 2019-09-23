@@ -1,6 +1,7 @@
 <template>
     <div id="footers">
-        <span>©2019 MARS GAMES LIMITED. All rights reserved</span>
+        <div>©2019 HYDROGEN GAMES LIMITED. All rights reserved</div>
+        <div style="margin-top: 2px;">All trademarks referenced herein are the properties of their respective owners</div>
     </div>
 </template>
 <script>
@@ -17,6 +18,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        flex-direction: column;
         opacity:0.6;
         color: #847D6E;
         margin-top: 50px;

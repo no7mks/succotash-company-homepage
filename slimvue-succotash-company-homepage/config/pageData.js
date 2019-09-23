@@ -8,5 +8,13 @@ module.exports = {
     'game/underworld-life': {
         pageTitle: 'Underworld life'
     },
-
+    'about': {
+        pageTitle: 'About US'
+    },
+    'game-list': {
+        pageTitle: 'Featured games'
+    },
+    'contact-us': {
+        pageTitle: 'CONTACT US'
+    },
 }

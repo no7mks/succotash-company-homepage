@@ -1,4 +1,6 @@
-import slimvue from 'slimvue';
-import homepage     from 'succotash-company-homepage/components/Homepage';
+import wappage from 'succotash-company-homepage/components/_WAP/IndexPage';
+import pcpage from 'succotash-company-homepage/components/Homepage';
+import {loadPage} from 'succotash-company-homepage/components/_WAP/js/base';
 
-slimvue.mount(homepage);
+loadPage(pcpage, wappage);
+
