@@ -35,7 +35,7 @@
                         link: ""
                     }
                 ],
-                gameDescription: "\"Underworld life\" is a global RPG mobile game masterpiece. In the game, you will become the protagonist, lead the Capos to revenge for the father and reinvigorate the family glory. The real scene restoration of underworld includes capo, beauty, smuggling, kidnapping, casino, and firefight systems. The battle for becoming godfather has been unveiled. The godfather's legendary life awaits your participation."
+                gameDescription: "“Underworld Life”是一款面向全球发行的RPG大作。作为主角的你负担着重振帮派荣光的使命。游戏内着力重现了地下世界里帮派、美女、走私、绑架、赌场、火拼等各色系统。教父的传奇等待你的书写。"
             };
         }
     };

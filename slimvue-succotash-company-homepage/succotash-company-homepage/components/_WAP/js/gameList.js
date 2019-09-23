@@ -4,8 +4,8 @@ module.exports = {
             img: require("assets/images/wap/news1.png"),
             link: "/game/underworld-life.html",
             title: "UNDERWORLD LIFE",
-            desc: 'A global RPG mobile game masterpiece. In the game, you will become the protagonist, lead the Capos to revenge for the father and reinvigorate the family glory. The real scene restoration of underworld includes capo, beauty, smuggling, kidnapping, casino, and firefight systems.',
-            full_desc: '"Underworld life" is a global RPG mobile game masterpiece. In the game, you will become the protagonist, lead the Capos to revenge for the father and reinvigorate the family glory. The real scene restoration of underworld includes capo, beauty, smuggling, kidnapping, casino, and firefight systems. The battle for becoming godfather has been unveiled. The godfather\'s legendary life awaits your participation.',
+            desc: '是一款面向全球发行的RPG大作。作为主角的你负担着重振帮派荣光的使命。游戏内着力重现了地下世界里帮派、美女、走私、绑架、赌场、火拼等各色系统。教父的传奇等待你的书写。',
+            full_desc: '“Underworld Life”是一款面向全球发行的RPG大作。作为主角的你负担着重振帮派荣光的使命。游戏内着力重现了地下世界里帮派、美女、走私、绑架、赌场、火拼等各色系统。教父的传奇等待你的书写。',
             screenShotImages : [
                 {
                     img: require("assets/images/wap/UL1.png"),
@@ -25,8 +25,8 @@ module.exports = {
             img: require("assets/images/wap/news2.png"),
             link: "/game/terra-land.html",
             title: "TERRA LAND",
-            desc: 'In the Land of Magic full of conflicts, you need to recruit many gifted people with special abilities, collect items and materials, train and cultivate your heroes in order to improve you fighting strength and protect your race.',
-            full_desc: 'Terra Land is a magic-themed RPG mobile game. In the Land of Magic full of conflicts, you need to recruit many gifted people with special abilities, collect items and materials, train and cultivate your heroes in order to improve you fighting strength and protect your race. With numerous legendary heroes, various skills, a great number of items, the game will definitely become collectors’ favorite. Multiple PVP real-time confrontations, many PVE ways to explore, experience the strong exhilaration of the intense confrontation! Guild’ donation, friend’ help, you are not fighting alone!',
+            desc: '是一款魔法背景的RPG手游。在危机四伏的魔法大陆，你需要和各色各样的伙伴一起，收集物品、训练自身、成长为足以保护家园的勇士。这是一个有着各种可能性的世界，也必将是收藏家的乐园。精心设计的PVP、PVE玩法也一定能满足你勇往直前的梦想！',
+            full_desc: '“Terra Land”是一款魔法背景的RPG手游。在危机四伏的魔法大陆，你需要和各色各样的伙伴一起，收集物品、训练自身、成长为足以保护家园的勇士。这是一个有着各种可能性的世界，也必将是收藏家的乐园。精心设计的PVP、PVE玩法也一定能满足你勇往直前的梦想！',
             screenShotImages : [
                 {
                     img: require("assets/images/wap/TL1.png"),

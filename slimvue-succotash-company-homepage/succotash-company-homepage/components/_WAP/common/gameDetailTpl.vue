@@ -5,11 +5,11 @@
                 <div id="title">{{gameData.title}}</div>
                 <div id="game-detail">
                     <div class="game-item">
-                        <div class="game-name">ABOUT</div>
+                        <div class="game-name">简介</div>
                         <div class="game-desc">{{gameData.full_desc}}</div>
                     </div>
                     <div class="game-screen-shot">
-                        <div class="game-name">SCREENS</div>
+                        <div class="game-name">截图</div>
                         <div class="img-list">
                             <img :src="item.img" v-for="item in gameData.screenShotImages" :style="getAvatarStyle(imgStyle)" />
                         </div>

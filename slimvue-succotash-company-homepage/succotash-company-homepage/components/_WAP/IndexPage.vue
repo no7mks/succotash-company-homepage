@@ -5,7 +5,7 @@
                <swiper-img :slide-images="slideImages"></swiper-img>
             </div>
             <div id="screen2">
-                <div id="title">FEATURED GAMES</div>
+                <div id="title">产品</div>
                 <div id="game-list">
                     <div class="game-item" v-for="game in this.gameList">
                         <div class="game-img">
@@ -20,7 +20,7 @@
 
             </div>
             <div id="screen3">
-                <a href="/game-list.html">More Games >></a>
+                <a href="/game-list.html">更多游戏 >></a>
             </div>
         </div>
     </base-page>

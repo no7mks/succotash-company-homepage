@@ -2,7 +2,7 @@
     <base-page>
         <div id="main" slot="page-content">
             <div id="screen1">
-                <div id="title">FEATURED GAMES</div>
+                <div id="title">产品</div>
                 <div id="game-list">
                     <div class="game-item" v-for="game in this.gameList">
                         <div class="game-img">

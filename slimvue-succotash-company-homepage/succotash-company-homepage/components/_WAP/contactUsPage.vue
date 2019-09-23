@@ -7,11 +7,10 @@
             <div id="screen2">
                 <div id="game-description-block">
                     <p style="padding-top: 0.75rem">
-                        We welcome all cooperation opportunities, including game develop, publish,
-                        intellectual property licencing, investment and cross brand development etc.
+                        我们欢迎各种合作机会，包括但不限于游戏制作、发行、IP授权、投资或品牌互动。
                     </p>
-                    <p>
-                        Please feel free to contact us <a href="mailto:bd@mars.games" id="click-here">here</a>.
+                    <p id="p-contact-txt">
+                        欢迎随时<a href="mailto:bd@mars.games" id="click-here">垂询</a>.
                     </p>
                 </div>
                 <Footer></Footer>
@@ -61,6 +60,10 @@
         color: #ffffff;
         font-size: .25rem;
         font-family: "Arial";
+    }
+
+    #p-contact-txt {
+        line-height: .25rem;
     }
 
     #click-here {

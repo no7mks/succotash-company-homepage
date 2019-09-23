@@ -29,10 +29,7 @@
                         link: ""
                     }
                 ],
-                gameDescription: "Terra Land is a magic-themed RPG mobile game. In the Land of Magic full of conflicts, you need to recruit many gifted people with special abilities, collect items and materials, train and cultivate your heroes in order to improve you fighting strength and protect your race.\n" +
-                "With numerous legendary heroes, various skills, a great number of items, the game will definitely become collectors’ favorite. \n" +
-                "Multiple PVP real-time confrontations, many PVE ways to explore, experience the strong exhilaration of the intense confrontation!\n" +
-                "Guild’ donation, friend’ help, you are not fighting alone!\n"
+                gameDescription: "“Terra Land”是一款魔法背景的RPG手游。在危机四伏的魔法大陆，你需要和各色各样的伙伴一起，收集物品、训练自身、成长为足以保护家园的勇士。这是一个有着各种可能性的世界，也必将是收藏家的乐园。精心设计的PVP、PVE玩法也一定能满足你勇往直前的梦想！"
             };
         }
     };

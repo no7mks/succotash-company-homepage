@@ -10,7 +10,7 @@
             </div>
             <div id="screen2">
                 <div id="screen-shots-title" class="s2-block">
-                    <span>FEATURED GAMES</span>
+                    <span>产品</span>
                 </div>
                 <div id="screen-shots-images">
                     <div v-for="img in screenShotImages" class="screen-shots-images-item-container">

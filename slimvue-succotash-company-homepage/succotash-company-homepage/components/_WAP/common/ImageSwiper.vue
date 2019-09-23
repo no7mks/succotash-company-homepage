@@ -6,7 +6,7 @@
             <div v-for="img in this.slideImages" class="swiper-slide top-bg-img">
                 <img :src="img.img">
                 <a v-if="img.link" :href="img.link">
-                    LEARN MORE
+                    了解更多
                 </a>
             </div>
         </div>

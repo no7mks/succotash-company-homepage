@@ -10,13 +10,13 @@
             </div>
             <div id="screen2">
                 <div class="screen-shots-title">
-                    <span>ABOUT</span>
+                    <span>简介</span>
                 </div>
                 <div id="game-description-block">
                     <p>{{gameDescription}}</p>
                 </div>
                 <div class="screen-shots-title">
-                    <span>SCREENS</span>
+                    <span>截图</span>
                 </div>
                 <div id="screen-shots-images">
                     <imageItem v-for="img in screenShotImages" :imgsrc="img.img" :link="img.link" :key="img.img" classname="screen-shot-item"></imageItem>

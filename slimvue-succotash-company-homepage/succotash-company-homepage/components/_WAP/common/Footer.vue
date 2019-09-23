@@ -3,8 +3,7 @@
         <a class="logo" href="/index.html">
             <img src="~succotash-company-homepage/assets/images/wap/bottom-logo.png" alt="">
         </a>
-        <div>©2019 HYDROGEN GAMES LIMITED. All rights reserved</div>
-        <div style="margin-top: 2px;">All trademarks referenced herein are the properties of their respective owners</div>
+        <div>©2019 HYDROGEN GAMES LIMITED. 版权所有</div>
     </div>
 </template>
 <script>

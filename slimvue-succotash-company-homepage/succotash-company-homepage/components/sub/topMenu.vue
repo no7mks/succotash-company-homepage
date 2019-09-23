@@ -1,17 +1,17 @@
 <template>
     <ul class="top_menu_bar">
         <li>
-            <a href="/about.html" class="main_navi_btn">ABOUT</a>
+            <a href="/about.html" class="main_navi_btn">关于</a>
         </li>
         <li class="li-submenuItem">
             <a class="submenuItem" href="javascript:void(0);">
-                <span>FEATURED GAMES</span>
+                <span>产品</span>
                 <i></i>
             </a>
             <div class="sub-menu-container">
                 <ul class="sub-menu">
                     <li class="grouped-mitem">
-                        <a href="/">ALL GAMES</a>
+                        <a href="/">所有游戏</a>
                     </li>
                     <li>
                         <a href="/game/underworld-life.html">UNDERWORLD LIFE</a>
@@ -30,7 +30,7 @@
             </div>
         </li>
         <li>
-            <a href="/contact-us.html" class="main_navi_btn">CONTACT US</a>
+            <a href="/contact-us.html" class="main_navi_btn">联系我们</a>
         </li>
         <li>
             <a href="javascript:void(0);" target="" class="icon-image_icon_tw"></a>

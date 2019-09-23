@@ -15,7 +15,7 @@
                     </a>
                     <a class="fr side_close" href="javascript:" @click="sideBar"></a>
                 </div>
-                <div class="games" @touchstart="hoverStartFn" @touchend="hoverEndFn" @click="dropDown">GAMES<transition name="drop-down"><i ref="drop"></i></transition></div>
+                <div class="games" @touchstart="hoverStartFn" @touchend="hoverEndFn" @click="dropDown">游戏<transition name="drop-down"><i ref="drop"></i></transition></div>
                 <transition name="bounce">
                     <ul class="games_side" v-if="show">
                         <li data-url="/game/underworld-life.html" @touchstart="hoverStartFn" @touchend="hoverEndFn" @click="gameHref">UNDERWORLD LIFE</li>
@@ -24,8 +24,8 @@
                         <li data-url="" @touchstart="hoverStartFn" @touchend="hoverEndFn" @click="gameHref">STEEL FORCE</li>
                     </ul>
                 </transition>
-                <div class="contact_us" @touchstart="hoverStartFn" @touchend="hoverEndFn"><a href="/about.html">COMPANY</a></div>
-                <div class="contact_us" @touchstart="hoverStartFn" @touchend="hoverEndFn"><a href="/contact-us.html">CONTACT US</a></div>
+                <div class="contact_us" @touchstart="hoverStartFn" @touchend="hoverEndFn"><a href="/about.html">公司介绍</a></div>
+                <div class="contact_us" @touchstart="hoverStartFn" @touchend="hoverEndFn"><a href="/contact-us.html">联系我们</a></div>
             </div>
 
         </div>

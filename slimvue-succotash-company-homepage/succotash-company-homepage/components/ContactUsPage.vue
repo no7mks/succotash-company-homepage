@@ -9,15 +9,14 @@
             </div>
             <div id="screen2">
                 <div class="screen-shots-title">
-                    <span>CONTACT US</span>
+                    <span>联系我们</span>
                 </div>
                 <div id="game-description-block">
                     <p style="padding-top: 0px">
-                        We welcome all cooperation opportunities, including game develop, publish,
-                        intellectual property licencing, investment and cross brand development etc.
+                        我们欢迎各种合作机会，包括但不限于游戏制作、发行、IP授权、投资或品牌互动。
                     </p>
                     <p>
-                        Please feel free to contact us <a href="mailto:bd@mars.games" id="click-here">here</a>.
+                        欢迎随时<a href="mailto:bd@mars.games" id="click-here">垂询</a>.
                     </p>
                 </div>
                 <Footer></Footer>

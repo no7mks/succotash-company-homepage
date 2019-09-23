@@ -9,26 +9,20 @@
             </div>
             <div id="screen2">
                 <div class="screen-shots-title">
-                    <span>ABOUT US</span>
+                    <span>关于</span>
                 </div>
                 <div id="game-description-block">
                     <p style="padding-top: 65px">
-                        Hydrogen Games is a mobile game publisher built by a group of passionate gamers and industry veterans.
-                        Since we established in 2018, we've brought four games under the brand Mars Games to the market.
-                        Our goal is to bring the best games to the global market.
+                        Hydrogen Games是一家由行业老兵和激情玩家共同创办的手游发行商。自2018年创办至今，
+                        我们以Mars Games为品牌共发行了四款不同的游戏。我们的目标是将最好的游戏推向全球市场。
                     </p>
                     <p>
-                        It’s been an exciting beginning for the company and that this is just the beginning for us.
-                        The digital entertainment industry is the most dynamic segment now.
-                        Creativity and innovation are among the core tenets of our organization and.
-                        As a global game publisher, we have a management background that included every facet of game creation,
-                        distribution, marketing and corporate structure.
-                        We pride ourselves in creating environments where employees are encouraged to be themselves,
-                        collaborate, and be inquisitive in order to achieve goals.
+                        这仅仅是一个激动人心的开始。数字娱乐市场正以蓬勃的姿态发展着。而我们的团队充满着各种创造性的基因。
+                        作为一家全球游戏发行商，我们的背景覆盖了游戏制作、发行、推广等方方面面。我们很自豪能为员工提供一个能实现自我，
+                        相互协作，探索各种可能性的平台。
                     </p>
                     <p>
-                        We can make new games that will change how people think about mobile gaming
-                        and will continue to seek out and cooperate with the best game developers worldwide.
+                        我们致力于发行那些能改变市场的产品。同时我们也寻求能和业界领先的游戏开发者建立合作。
                     </p>
                 </div>
                 <Footer></Footer>

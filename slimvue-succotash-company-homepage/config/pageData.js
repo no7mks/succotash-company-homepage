@@ -9,12 +9,12 @@ module.exports = {
         pageTitle: 'Underworld life'
     },
     'about': {
-        pageTitle: 'About US'
+        pageTitle: '关于我们'
     },
     'game-list': {
-        pageTitle: 'Featured games'
+        pageTitle: '产品'
     },
     'contact-us': {
-        pageTitle: 'CONTACT US'
+        pageTitle: '联系我们'
     },
 }
